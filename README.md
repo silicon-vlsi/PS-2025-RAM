@@ -297,7 +297,7 @@ inverters, driving final outputs out and outb with full logic levels.
 -   Here is the layout of 8 bit Sense amplifier
  
    <img width="926" height="430" alt="image" src="https://github.com/user-attachments/assets/b7123ad3-c323-48e5-81cb-2f334d22b408" />
-  #### TOP LEVEL LAYOUT
+   # TOP LEVEL LAYOUT
   <img width="859" height="1238" alt="image" src="https://github.com/user-attachments/assets/d1c32f64-86f4-4960-ad85-13622a88ef2e" />
 
 
