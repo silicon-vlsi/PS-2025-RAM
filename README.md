@@ -128,6 +128,20 @@ In this section, Various components of projects are explained in detail and real
    ![Diagram](Rowdec.png)
 - The schematic of the decoder is shown below.
    ![Diagram](DOCS/Decoder.png)
+  ###### RAM/ICM logic block :
+- The RAM_ICM logic block controls the activation of wordlines (WL01, WL02) based on the selected operating mode—SRAM or In-Memory Computing (ICM).
+- This block ensures that only the intended wordlines are enabled   under appropriate control signals, allowing conventional memory access or parallel computation.
+- Inputs and Outputs
+  
+| Signal | Type | Description |  
+| - | - | - |  
+| wr | Input | Enable signal for the block; must be high to activate any wordline |  
+| icm | Input | icm	Input	Mode select: 0 for SRAM mode, 1 for ICM mode | 
+| dec | Input | Output of address decoder; selects wordlines in SRAM mode |  
+| dac0 | Input | Data/control signal for activating WL01 in ICM mode |  
+| dac1 | Input | Data/control signal for activating WL02 in ICM mode |  
+| WL01 | Output | Wordline 1 control signal |  
+| WL02 | Output | Wordline 2 control signal | 
   
 
   
