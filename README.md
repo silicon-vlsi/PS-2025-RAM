@@ -241,7 +241,7 @@ inverters, driving final outputs out and outb with full logic levels.
 -	The access transistors in the SRAM cell pass these voltages to the internal nodes of the cell, flipping its state to reflect the input data.
 -	Once the data is latched, wr_en is deactivated, isolating the bitlines again.
 
-- ## Design and testbench
+ ### Design and testbench
 
 
 
