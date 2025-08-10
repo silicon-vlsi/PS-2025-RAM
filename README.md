@@ -51,7 +51,7 @@ Applications of SRAM include serving as cache memory in microprocessors, providi
 
 ## Components
 
-In this section, Various components of projects are explained in detail and realted equations, simulation results are mentioned.  
+In this section, Various components of projects are explained:  
 
 ### 6T_SRAM
 <div align = "center">
