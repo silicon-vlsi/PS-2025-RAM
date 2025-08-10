@@ -35,7 +35,7 @@ Applications of SRAM include serving as cache memory in microprocessors, providi
 - We can read or write 8 byte data in the memory element and the total amount of memeory avaliable is 16 byte.
 - The design of 16 byte SRAM is done by arranging the **6T SRAM cells** as 16 row and in ach row there will be 8 cells
    for each row there will a word line (WL) and for each colum there will a BL and BLB so in total there will be 16 WL and 8 BL and BLB.
-- 6T SRAM cells are designed using a back to back inverter and two access transistors, the design part will be discussed l
+- 6T SRAM cells are designed using a back to back inverter and two access transistors, the design part will be discussed 
   #### Operation
 
   - All the signals that are shown in the figure 1 are given parallely.
