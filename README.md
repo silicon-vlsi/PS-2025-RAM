@@ -61,3 +61,27 @@ In this section, Various components of projects are explained in detail and real
 <p></p>
 <p>&nbsp;Figure 6: 6T SRAM</p>
 </div>
+ The above fingure i.e figure 4 shows the classic structure of a 6T sram which can store one bit data.
+- These are basically two back to back inverter with access transistor i.e M3 and M4.
+- Since there are two back to back inverter structure is there till the time the vdd and ground supply is there for inverter the data will not change.
+#### Operation :
+- There are basically 3 modes of opeartion,
+     - read operation
+     - write operation
+     - hold operation
+- In read and write operation WL (Word line) = 1 and in hold operation WL = 0.
+- Word line will be controlled by a signal called control and row decoder output, which will be discussed later.
+- read write operation will be controlled by  signal rwn and  control as shown in figure 1 i.e SRAM architecture.
+##### read operation :
+- in read operation first the bit line (BL) and bit line bar (BLB) node will be charged to vdd.
+- Then PC=1 i.e Precharge will be turned OFF, in figure 4 suppose node N1 is at vdd and N2 is at zero i.e we can say that we have stored a logic 1 in sram cell previously.
+- When we will make WL = 1 then, 
+  BL node is at vdd and N1 is at also at vdd then there will be no change in BL where as BLB node is at vdd but N2 is at logic 0 and M2 is also ON as N1 is input for M2 because of back to back structure
+  hence BLB node will try to discharge i.e the Parasitic Cap at BLB node Cpar will discharge through that path of M2 and M4.
+- In this way BL node is stable and BLB node is going down which is a indication that we are reading logic 1 similarly while reading logic 0 BLB node will be stable at logic 1 where as BL node will be  dischagred gradually.
+- During read operation there is a problem that we can face that is :
+   - While reading logic 0 BL node will be discharged and it will charge N1 node and if N1 node will be charged to same or more than threshold voltage then the NMOS on the other side 
+  i.e M2 will be ON it may toggle the data stored even if it will not toggle there will be a unneccesary current flow since NMOS is on and that is a power loss.
+   - Thats why we try to keep the node N1 voltage around 0.3 V i.e less than the threashold now how can we do that for that we have to modify the sizing of two NMOS i.e
+  M1 and M3 and because SRAM is a symmetric structure M2 and M4 will also have the same size.
+
