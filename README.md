@@ -94,5 +94,17 @@ In this section, Various components of projects are explained in detail and real
 - Data line will be connected to BL where as Data bar line will be connected to BLB.
 - As we want to write one the BL line will at logic 1 and the BLB line will be at logic 0.
 - Then WL=1, so that the data in BL and BLB line can be stored in the internal node of the sram i.e N1 and N2 in this case.
+  ### Precharge_circuit
+<div align="center">
+<!--<figcaption>Figure 2: Precharge Circuit</figcaption>-->
+<img src="./precharge ckt.png" alt="Precharge circuit" title="Figure 2" height="400" width="700">
+<p align="center">Figure 2: Precharge Circuit</p>
+</div>
+
+- Preharge circuit is basically used to charge the BL and BLB node to vdd before write and read operation.
+- When PC = 0, at that time the PMOS will be ON and it will charge the BL and BLB to vdd.
+- The Meq i.e shown in figure 2 is basically the equallizer transistor whose purpose is to equallize the BL and BLB line during precharge period.
+- As discussed earlier, we have a large parasistic capacitance on BL node i.e Cpar. Now PMOS in the Precharge has to be that large so that it can charge the capacitance in less time.
+
   
 
