@@ -48,3 +48,16 @@ Applications of SRAM include serving as cache memory in microprocessors, providi
    - Then if we want to read again we have to precharge and the BL and BLB node to vdd that means Cpar is fully charged. Then when pc = 0 and WL = 1 at that time the the data stored in the sram is 1 then the BLB
   node will come down and if the data stored in sram is 0 then the BL node will come down i.e the Cpar in the BL side wll discharge.Now the sense Amplifier two inputs are also connected to the BL and BLB line
   when any one node will go down it will sense the voltage difference between BL and BLB node and at the sense amplifier output we will get the data of sram that we have selected by giving its adress.
+
+## Components
+
+In this section, Various components of projects are explained in detail and realted equations, simulation results are mentioned.  
+
+### 6T_SRAM
+<div align = "center">
+<figure>
+    <img src="images/SRAM.png" alt="6T SRAM" title="Figure 4" height="500" width="700" align="center">
+</figure>
+<p></p>
+<p>&nbsp;Figure 6: 6T SRAM</p>
+</div>
