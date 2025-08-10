@@ -134,6 +134,9 @@ In this section, Various components of projects are explained:
 - Here is the schematic of the precharge circuit
    ![Diagram](PC.png)
 - ### Row_decoder
+- The 4:16 decoder is a key control element in the proposed SRAM-based IMC architecture.
+- It is responsible for selecting one of the 16 wordlines in the 16×8 SRAM array based on a 4-bit binary input address.
+-  By translating this address into a 16-bit one- hot output, the decoder ensures precise activation of memory rows during both memory and compute operations.
 - As we have discussed earlier we have designed 16 byte memory i.e we have 16 rows storing 1 byte each and at a time we can access 1 byte memory only for read or write operation.
 - So we have designed a 4:16 decoder which will take address as input and then decoders output will be given to a AND gate as input and another input of that gate is ctrl then the output of the AND gate will be given to Word line.
 - Now suppose the adress is 0000 then dec<0> will be 1 and and other decoder output will be 0 then only the 0th row of SRAM cells will be selected and there wordline will ON depending on ctrl signal.
