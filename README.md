@@ -64,6 +64,7 @@ In this section, Various components of projects are explained in detail and real
  The above fingure i.e figure 4 shows the classic structure of a 6T sram which can store one bit data.
 - These are basically two back to back inverter with access transistor i.e M3 and M4.
 - Since there are two back to back inverter structure is there till the time the vdd and ground supply is there for inverter the data will not change.
+
 #### Operation :
 - There are basically 3 modes of opeartion,
      - read operation
@@ -72,6 +73,7 @@ In this section, Various components of projects are explained in detail and real
 - In read and write operation WL (Word line) = 1 and in hold operation WL = 0.
 - Word line will be controlled by a signal called control and row decoder output, which will be discussed later.
 - read write operation will be controlled by  signal rwn and  control as shown in figure 1 i.e SRAM architecture.
+
 ##### read operation :
 - in read operation first the bit line (BL) and bit line bar (BLB) node will be charged to vdd.
 - Then PC=1 i.e Precharge will be turned OFF, in figure 4 suppose node N1 is at vdd and N2 is at zero i.e we can say that we have stored a logic 1 in sram cell previously.
