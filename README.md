@@ -95,7 +95,7 @@ In this section, Various components of projects are explained in detail and real
 - As we want to write one the BL line will at logic 1 and the BLB line will be at logic 0.
 - Then WL=1, so that the data in BL and BLB line can be stored in the internal node of the sram i.e N1 and N2 in this case.
 
-- We had  extra two transistor which is parrallel to M3 and M4 to do our memory incomputing function as shown below
+- We have  extra two transistor which is parrallel to M3 and M4 to do our memory incomputing function as shown below
  <img width="914" height="628" alt="image" src="https://github.com/user-attachments/assets/32ecbdff-f1bb-4c1b-991b-a9d14d3584f2" />
  
 - Here is the schematic of 8T SRAM
@@ -128,7 +128,7 @@ In this section, Various components of projects are explained in detail and real
    ![Diagram](Rowdec.png)
 - The schematic of the decoder is shown below.
    ![Diagram](DOCS/Decoder.png)
-  ###### RAM/ICM logic block :
+  ### RAM/ICM logic block :
 - The RAM_ICM logic block controls the activation of wordlines (WL01, WL02) based on the selected operating mode—SRAM or In-Memory Computing (ICM).
 - This block ensures that only the intended wordlines are enabled   under appropriate control signals, allowing conventional memory access or parallel computation.
 - Inputs and Outputs
@@ -142,7 +142,43 @@ In this section, Various components of projects are explained in detail and real
 | dac1 | Input | Data/control signal for activating WL02 in ICM mode |  
 | WL01 | Output | Wordline 1 control signal |  
 | WL02 | Output | Wordline 2 control signal | 
-  
+#### Operating Modes and Functionality
+#### A.	Block Disabled (wr = 0)
+- The logic block is inactive, and both wordlines are forced low regardless of other inputs.
+- Ensures that no unintended access or computation occurs
+  | Condition | Output |
+  | - | - |
+  | wr=0 | WL01=0,WLO2=0 |
+  #### B.	SRAM Mode (wr = 1, icm = 0)
+- In this mode, the output of the decoder (dec) controls both wordlines simultaneously.
+- If the decoder output is 1, both wordlines are enabled for read/write operations.
+  | Condition | Output |
+  | - | - |
+  | wr=1.icm=0,dec=1 | WL01=1,WLO2=1 |
+   | wr=1.icm=0,dec=0 | WL01=0,WLO2=0 |
+  #### C.	ICM Mode (wr = 1, icm = 1)
+- This mode enables selective and parallel activation of wordlines based on dac0 and dac1.
+- Useful for performing logic operations across multiple memory rows.
+   | Condition | Output |
+  | - | - |
+  | dac0=1 | WL01=1 |
+   | dac1=1 | WL02=1 |
+   | dac0=0 | WL01=0 |
+   | dac1=0 | WL02=0 |
+  #### Logic Expressions
+- Using the truth table, the outputs can be defined as:
+  - Wordline 1 (WL01):
+  - WL01 = wr ⋅ ((~icm ⋅ dec) + (icm ⋅ dac0))
+- Wordline 2 (WL02):
+ - WL02 = wr ⋅ ((~icm ⋅ dec) + (icm ⋅ dac1))
+- These expressions ensure that:
+- Wordlines are active only when wr is high,
+- dec selects both wordlines in SRAM mode,
+- dac0/dac1 independently select wordlines in ICM mode
+
+
+
+
 
   
 
