@@ -94,6 +94,10 @@ In this section, Various components of projects are explained in detail and real
 - Data line will be connected to BL where as Data bar line will be connected to BLB.
 - As we want to write one the BL line will at logic 1 and the BLB line will be at logic 0.
 - Then WL=1, so that the data in BL and BLB line can be stored in the internal node of the sram i.e N1 and N2 in this case.
+
+- We had  extra two transistor which is parrallel to M3 and M4 to do our memory incomputing function.
+- Here is the schematic of 8T SRAM
+- ![Diagram](8T_SRAM.png)
   ### Precharge_circuit
 <div align="center">
 <!--<figcaption>Figure 2: Precharge Circuit</figcaption>-->
@@ -113,6 +117,8 @@ In this section, Various components of projects are explained in detail and real
 
 - Can we go for pre-charge and pmos as the access transistors?
 - It's technically possible to use PMOS transistors for access during pre-charge, it would be unconventional and may introduce unnecessary complexity and potential performance drawbacks. NMOS transistors are used for active pull-down operations in SRAM cells because they can discharge the storage nodes quickly when needed. And using PMOS can discharge but taking up longer time than NMOS making the device slower
+- Here is the schematic of the precharge circuit
+- ![Diagram](PC.png)
 
   
 
