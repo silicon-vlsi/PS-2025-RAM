@@ -201,6 +201,23 @@ inverters, driving final outputs out and outb with full logic levels.
  ![Diagram](DOCS/Sense_Amp.png)
 
 
+  #### Working Principle
+####  Pre-sensing (Idle):
+-	If enb = 1, the top PMOS is OFF → no connection to dvdd.
+-	If en_sa = 0, the bottom NMOS is OFF → no connection to dgnd.
+-	The amplifier is disabled, preserving low static power.
+####	Sensing Enabled:
+-	When enb = 0 and en_sa = 1, both PMOS and NMOS gating transistors are ON.
+-	bl and blb differentially charge based on SRAM content.
+-	The cross-coupled structure quickly resolves the small voltage difference. 
+-	Positive feedback pulls one output high and the other low.
+-	These voltages propagate through the output inverters to out and outb.
+
+####	Additional Feature:
+-	The extra NMOS connected between the cross-coupled NMOS pair and dgnd (gate controlled by en_sa) ensures that the sense amplifier activates only during intended sensing periods, improving control and reducing power. 
+
+
+
 
 
 
