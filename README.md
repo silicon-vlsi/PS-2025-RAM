@@ -280,14 +280,22 @@ inverters, driving final outputs out and outb with full logic levels.
 - Here is the layout of precharge circuit:
 -  ![Diagram](DOCS/PC_lay1.png)
 -  Here is the 8-bit Precharge circuit
+-  
 -  <img width="991" height="526" alt="image" src="https://github.com/user-attachments/assets/a0f7908a-525d-4a2a-893c-a59af556544d" />
+
 - Here is the layout of Write driver :
--  ![Diagram](DOCS/wd_lay2.png)
+  
+-   ![Diagram](DOCS/wd_lay2.png)
+   
 -  Here is the layout of 8 bit write driver
+  
 -   ![Diagram](DOCS/wd_8lay1.png)
+    
 -   Here is the layout of Sense amplifier
+    
 -   [Diagram](DOCS/sen_amp_lay1.png)
 -   Here is the layout of 8 bit Sense amplifier
+ 
 -   <img width="926" height="430" alt="image" src="https://github.com/user-attachments/assets/b7123ad3-c323-48e5-81cb-2f334d22b408" />
   #### TOP LEVEL LAYOUT
   <img width="859" height="1238" alt="image" src="https://github.com/user-attachments/assets/d1c32f64-86f4-4960-ad85-13622a88ef2e" />
