@@ -95,11 +95,23 @@ In this section, Various components of projects are explained in detail and real
 - As we want to write one the BL line will at logic 1 and the BLB line will be at logic 0.
 - Then WL=1, so that the data in BL and BLB line can be stored in the internal node of the sram i.e N1 and N2 in this case.
 
-- We have  extra two transistor which is parrallel to M3 and M4 to do our memory incomputing function as shown below
+- In 8 transisitor SRAN we have  extra two transistor which is parrallel to M3 and M4 to do our memory incomputing function as shown below
  <img width="914" height="628" alt="image" src="https://github.com/user-attachments/assets/32ecbdff-f1bb-4c1b-991b-a9d14d3584f2" />
  
 - Here is the schematic of 8T SRAM
   ![Diagram](8T_SRAM.png)
+   #### 8T variant 
+- Two NMOS transistors controlled by a second wordline (WL1).
+-	This additional path allows isolated read or compute access, preventing storage node disturbance.
+ - Transistor Configuration
+-	NMOS: sky130_fd_pr	nfet_01v8
+-	PMOS: sky130_fd_pr  pfet_01v8
+#### Operational Modes
+-	Write (icm = 0, wr = 1): Data written using WL and bitlines.
+-	Read (icm = 0, wr = 0): Safe differential sensing with improved stability.
+-	IMC (icm = 1): WL and WL1 activate two rows for compute operations, enabling parallel operand access.
+
+
   ### Precharge_circuit
 <div align="center">
 <!--<figcaption>Figure 2: Precharge Circuit</figcaption>-->
