@@ -182,6 +182,24 @@ In this section, Various components of projects are explained in detail and real
 - This sense amplifier design uses a differential cross-coupled inverter-based structure for fast and accurate bitline sensing.
 - It includes additional PMOS and NMOS transistors for power gating, enabling controlled activation using enb and en_sa signals.
 - The outputs are buffered through inverters to generate rail-to-rail digital outputs (out and outb).
+#### Circuit Structure
+#### 1.	Core Cross-Coupled Inverters
+- Two inverters are cross-coupled at their outputs and inputs.
+- Their gates connect to bl and blb, with outputs driving out and outb.
+#### 2.	PMOS Pull-up Network
+- Two PMOS transistors connect to each inverter's top branch.
+- A global PMOS switch above them is controlled by enb.
+- When enb = 0, it connects the network to dvdd for sensing.
+#### 3.	NMOS Pull-down Network
+- Each inverter has its own NMOS pulldown.
+- An extra NMOS is placed below, gated by en_sa.
+- It enables discharge to dgnd during sensing.
+#### 4.	Output Buffering
+- The outputs of the cross-coupled inverters are connected to standard
+inverters, driving final outputs out and outb with full logic levels.
+
+
+
 
 
 
