@@ -12,7 +12,7 @@
     - [8T_SRAM](#8T_SRAM)
     - [Precharge_circuit](#Precharge_circuit)
     - [Row_decoder](#Row_decoder)
-    - [RAM/ICM logic block](#ramicm-logic-block)
+    - [RAM/ICM logic block](#Ram-Icm-logic-block)
     - [Sense_Amplifier](#Sense_Amplifier)
     - [Write_driver](#Write_driver)
  
