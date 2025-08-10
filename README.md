@@ -175,6 +175,9 @@ In this section, Various components of projects are explained in detail and real
 - Wordlines are active only when wr is high,
 - dec selects both wordlines in SRAM mode,
 - dac0/dac1 independently select wordlines in ICM mode
+- Here is the schematic of the Ram/Icm logic box
+ <img width="865" height="499" alt="image" src="https://github.com/user-attachments/assets/edf858c8-9be3-48a0-86d5-9c49156efab8" />
+
 
 
 
