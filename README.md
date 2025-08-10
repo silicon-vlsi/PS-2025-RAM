@@ -272,12 +272,12 @@ inverters, driving final outputs out and outb with full logic levels.
 - 16*8 SRAM ARRAY LAYOUT:
   <img width="890" height="765" alt="image" src="https://github.com/user-attachments/assets/5d410034-7084-4752-868f-ae42013e720e" />
   - Here is the layout of the 4:16 Decoder
-  -  ![Diagram](DOCS/Dec_Layout.png)
+    ![Diagram](DOCS/Dec_Layout.png)
   -  Here is the layout of RAM/icm logic box
-  -  <img width="944" height="428" alt="image" src="https://github.com/user-attachments/assets/444cae38-0af9-4cff-9747-fd9a1ecb88cd" />
-  -Here is the layout of 16x RAM/ICM LOGIC BOX
+    <img width="944" height="428" alt="image" src="https://github.com/user-attachments/assets/444cae38-0af9-4cff-9747-fd9a1ecb88cd" />
+  - Here is the layout of 16x RAM/ICM LOGIC BOX
 <img width="838" height="1281" alt="image" src="https://github.com/user-attachments/assets/36b7d9bd-c4d4-4e23-8445-1b02667ca301" />
--Here is the layout of precharge circuit:
+- Here is the layout of precharge circuit:
 -  ![Diagram](DOCS/PC_lay1.png)
 -  Here is the 8-bit Precharge circuit
 -  <img width="991" height="526" alt="image" src="https://github.com/user-attachments/assets/a0f7908a-525d-4a2a-893c-a59af556544d" />
