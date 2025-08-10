@@ -19,6 +19,7 @@
 - [Design and testbench](#Design_and_testbench)
 - [Layout](#Layout)
 - [Conclusion](#Conclusion)
+ ## Introduction
   ### SRAM :  
 
 Static Random Access Memory, commonly known as SRAM, is a fundamental type of semiconductor memory used extensively in modern digital electronic systems. Unlike dynamic RAM (DRAM), which requires periodic refreshing, SRAM is static in nature, meaning it holds data as long as power is supplied.
