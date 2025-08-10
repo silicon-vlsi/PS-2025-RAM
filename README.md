@@ -307,6 +307,8 @@ inverters, driving final outputs out and outb with full logic levels.
    
   <img width="859" height="1238" alt="image" src="https://github.com/user-attachments/assets/d1c32f64-86f4-4960-ad85-13622a88ef2e" />
 
+  ##### Conclusion
+
 
 
 
