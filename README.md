@@ -126,7 +126,7 @@ In this section, Various components of projects are explained in detail and real
 - So we have designed a 4:16 decoder which will take address as input and then decoders output will be given to a AND gate as input and another input of that gate is ctrl then the output of the AND gate will be given to Word line.
 - Now suppose the adress is 0000 then dec<0> will be 1 and and other decoder output will be 0 then only the 0th row of SRAM cells will be selected and there wordline will ON depending on ctrl signal.
    ![Diagram](Rowdec.png)
-  The schematic of the decoder is shown below.
+- The schematic of the decoder is shown below.
    ![Diagram](DOCS/Decoder.png)
   
 
