@@ -95,7 +95,7 @@ In this section, Various components of projects are explained:
 - As we want to write one the BL line will at logic 1 and the BLB line will be at logic 0.
 - Then WL=1, so that the data in BL and BLB line can be stored in the internal node of the sram i.e N1 and N2 in this case.
 
-- In 8 transisitor SRAN we have  extra two transistor which is parrallel to M3 and M4 to do our memory incomputing function as shown below
+- In 8 transisitor SRAM we have  extra two transistor which is parrallel to M3 and M4 to do our memory incomputing function as shown below
  <img width="914" height="628" alt="image" src="https://github.com/user-attachments/assets/32ecbdff-f1bb-4c1b-991b-a9d14d3584f2" />
  
 - Here is the schematic of 8T SRAM
