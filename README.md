@@ -177,6 +177,11 @@ In this section, Various components of projects are explained in detail and real
 - dac0/dac1 independently select wordlines in ICM mode
 - Here is the schematic of the Ram/Icm logic box
  <img width="865" height="499" alt="image" src="https://github.com/user-attachments/assets/edf858c8-9be3-48a0-86d5-9c49156efab8" />
+ 
+- ### Sense_Amplifier
+- This sense amplifier design uses a differential cross-coupled inverter-based structure for fast and accurate bitline sensing.
+- It includes additional PMOS and NMOS transistors for power gating, enabling controlled activation using enb and en_sa signals.
+- The outputs are buffered through inverters to generate rail-to-rail digital outputs (out and outb).
 
 
 
