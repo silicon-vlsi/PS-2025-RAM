@@ -97,7 +97,7 @@ In this section, Various components of projects are explained in detail and real
 
 - We had  extra two transistor which is parrallel to M3 and M4 to do our memory incomputing function.
 - Here is the schematic of 8T SRAM
-- ![Diagram](8T_SRAM.png)
+  ![Diagram](8T_SRAM.png)
   ### Precharge_circuit
 <div align="center">
 <!--<figcaption>Figure 2: Precharge Circuit</figcaption>-->
@@ -118,7 +118,13 @@ In this section, Various components of projects are explained in detail and real
 - Can we go for pre-charge and pmos as the access transistors?
 - It's technically possible to use PMOS transistors for access during pre-charge, it would be unconventional and may introduce unnecessary complexity and potential performance drawbacks. NMOS transistors are used for active pull-down operations in SRAM cells because they can discharge the storage nodes quickly when needed. And using PMOS can discharge but taking up longer time than NMOS making the device slower
 - Here is the schematic of the precharge circuit
-- ![Diagram](PC.png)
+   ![Diagram](PC.png)
+- ### Row_decoder
+- As we have discussed earlier we have designed 16 byte memory i.e we have 16 rows storing 1 byte each and at a time we can access 1 byte memory only for read or write operation.
+- So we have designed a 4:16 decoder which will take address as input and then decoders output will be given to a AND gate as input and another input of that gate is ctrl then the output of the AND gate will be given to Word line.
+- Now suppose the adress is 0000 then dec<0> will be 1 and and other decoder output will be 0 then only the 0th row of SRAM cells will be selected and there wordline will ON depending on ctrl signal.
+- The schematic of the decoder is shown below.
+   ![Diagram](Rowdec.png)
 
   
 
