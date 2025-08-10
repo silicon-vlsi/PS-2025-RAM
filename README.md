@@ -214,7 +214,8 @@ inverters, driving final outputs out and outb with full logic levels.
 -	These voltages propagate through the output inverters to out and outb.
 
 ####	Additional Feature:
--	The extra NMOS connected between the cross-coupled NMOS pair and dgnd (gate controlled by en_sa) ensures that the sense amplifier activates only during intended sensing periods, improving control and reducing power. 
+-	The extra NMOS connected between the cross-coupled NMOS pair and dgnd (gate controlled by en_sa) ensures that the sense amplifier activates only during intended sensing periods, improving control and reducing power.
+-	### Write_driver
 
 
 
