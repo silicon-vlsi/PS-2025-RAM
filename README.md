@@ -59,7 +59,7 @@ In this section, Various components of projects are explained in detail and real
     <img src="DOCS/6 tSRAM.png" alt="6T SRAM" title="Figure 4" height="500" width="700" align="center">
 </figure>
 <p></p>
-<p>&nbsp;Figure 6: 6T SRAM</p>
+<p>&nbsp;Figure 4: 6T SRAM</p>
 </div>
  The above fingure i.e figure 4 shows the classic structure of a 6T sram which can store one bit data.
 - These are basically two back to back inverter with access transistor i.e M3 and M4.
