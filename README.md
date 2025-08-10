@@ -74,8 +74,8 @@ In this section, Various components of projects are explained in detail and real
 - Word line will be controlled by a signal called control and row decoder output, which will be discussed later.
 - read write operation will be controlled by  signal rwn and  control as shown in figure 1 i.e SRAM architecture.
 
-##### read operation :
-- in read operation first the bit line (BL) and bit line bar (BLB) node will be charged to vdd.
+##### Read operation :
+- In read operation first the bit line (BL) and bit line bar (BLB) node will be charged to vdd.
 - Then PC=1 i.e Precharge will be turned OFF, in figure 4 suppose node N1 is at vdd and N2 is at zero i.e we can say that we have stored a logic 1 in sram cell previously.
 - When we will make WL = 1 then, 
   BL node is at vdd and N1 is at also at vdd then there will be no change in BL where as BLB node is at vdd but N2 is at logic 0 and M2 is also ON as N1 is input for M2 because of back to back structure
@@ -86,4 +86,13 @@ In this section, Various components of projects are explained in detail and real
   i.e M2 will be ON it may toggle the data stored even if it will not toggle there will be a unneccesary current flow since NMOS is on and that is a power loss.
    - Thats why we try to keep the node N1 voltage around 0.3 V i.e less than the threashold now how can we do that for that we have to modify the sizing of two NMOS i.e
   M1 and M3 and because SRAM is a symmetric structure M2 and M4 will also have the same size.
+##### Write operation :
+
+- In write operation, first we will precharge both the nodes to vdd .
+- Suppose node N1 is at logic 0 and N2 is at logic 1, now we want to say write logic 1 to node N1.
+- After precharge, we will make PC = 1 and then when Ctrl = 1 and rwn = 0 at that time the write driver will be connected to the BL and BLB line.
+- Data line will be connected to BL where as Data bar line will be connected to BLB.
+- As we want to write one the BL line will at logic 1 and the BLB line will be at logic 0.
+- Then WL=1, so that the data in BL and BLB line can be stored in the internal node of the sram i.e N1 and N2 in this case.
+  
 
