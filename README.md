@@ -266,6 +266,8 @@ inverters, driving final outputs out and outb with full logic levels.
 - Here simulation of Top level simulation
  <img width="990" height="558" alt="image" src="https://github.com/user-attachments/assets/852786da-db01-47fb-a57d-2d3121cac55e" />
 
+ #### 
+
  
 
 
