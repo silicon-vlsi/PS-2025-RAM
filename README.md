@@ -16,7 +16,7 @@
     - [Sense_Amplifier](#Sense_Amplifier)
     - [Write_driver](#Write_driver)
  
-- [Design and testbench](#Design_and_testbench)
+- [Simulation](#Simulation)
 - [Layout](#Layout)
 - [Conclusion](#Conclusion)
  ## Introduction
@@ -241,7 +241,37 @@ inverters, driving final outputs out and outb with full logic levels.
 -	The access transistors in the SRAM cell pass these voltages to the internal nodes of the cell, flipping its state to reflect the input data.
 -	Once the data is latched, wr_en is deactivated, isolating the bitlines again.
 
- ### Design and testbench
+ ### Simulation
+ - Here is the simulation of 8T SRAM
+   
+  <img width="991" height="490" alt="image" src="https://github.com/user-attachments/assets/6afc6eac-f436-4b40-ac8e-c2109eba7d11" />
+ - Here is the simulation of Decoder
+   
+  <img width="991" height="421" alt="image" src="https://github.com/user-attachments/assets/d8d3962b-bc4e-456e-a08f-13c634f3ad50" />
+ - Here is the simulation of Precharge circuit
+
+  <img width="991" height="490" alt="image" src="https://github.com/user-attachments/assets/1cd9e717-aaca-4ee9-bf96-759074b2b856" />
+ - Here is the simulation of the Write Driver
+   
+  <img width="991" height="482" alt="image" src="https://github.com/user-attachments/assets/5091d905-d5c6-4b8b-87d2-988cbc68c983" />
+ - Here is the simulation of the Sense Amplifier
+   
+  <img width="989" height="419" alt="image" src="https://github.com/user-attachments/assets/a1b974a9-d160-47d5-a75d-d4d062f769e0" />
+  
+ #### TOP LEVEL SCHEMATIC
+  ![Diagram](DOCS/TL.png)
+  - Top level testbench
+    
+   ![Diagram](DOCS/TLTB.png)
+- Here simulation of Top level simulation
+ <img width="990" height="558" alt="image" src="https://github.com/user-attachments/assets/852786da-db01-47fb-a57d-2d3121cac55e" />
+
+ 
+
+
+
+
+
 
 
 
