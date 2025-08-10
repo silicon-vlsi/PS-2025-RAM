@@ -128,7 +128,7 @@ In this section, Various components of projects are explained in detail and real
    ![Diagram](Rowdec.png)
 - The schematic of the decoder is shown below.
    ![Diagram](DOCS/Decoder.png)
-  ### RAM/ICM logic block <a name="RAM_ICM_logic_block"></a>
+  ### RAM/ICM logic block
 - The RAM_ICM logic block controls the activation of wordlines (WL01, WL02) based on the selected operating mode—SRAM or In-Memory Computing (ICM).
 - This block ensures that only the intended wordlines are enabled   under appropriate control signals, allowing conventional memory access or parallel computation.
 - Inputs and Outputs
