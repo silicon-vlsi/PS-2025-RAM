@@ -105,6 +105,14 @@ In this section, Various components of projects are explained in detail and real
 - When PC = 0, at that time the PMOS will be ON and it will charge the BL and BLB to vdd.
 - The Meq i.e shown in figure 2 is basically the equallizer transistor whose purpose is to equallize the BL and BLB line during precharge period.
 - As discussed earlier, we have a large parasistic capacitance on BL node i.e Cpar. Now PMOS in the Precharge has to be that large so that it can charge the capacitance in less time.
+- Why do we do pre-charging or pre-discharging?
+- Before reading or writing from/to the SRAM, we need to make the BL and BLB of same voltage, we can do it by either ways, by pre-charging them to 1.8V or pre-discharging them to 0V. And the difference between BL and BLB, due to falling or rising of the BL and BLB, can be sensed and output can be obtained.
+
+- why did we go for pre-charge and not pre-discharge?
+- If we are going for pre-discharge then the area of the transistors increases by 11.9%. So, minimising the area and having good operative gain we went for the pre-charge.
+
+- Can we go for pre-charge and pmos as the access transistors?
+- It's technically possible to use PMOS transistors for access during pre-charge, it would be unconventional and may introduce unnecessary complexity and potential performance drawbacks. NMOS transistors are used for active pull-down operations in SRAM cells because they can discharge the storage nodes quickly when needed. And using PMOS can discharge but taking up longer time than NMOS making the device slower
 
   
 
