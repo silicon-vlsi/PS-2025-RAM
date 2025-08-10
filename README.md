@@ -278,10 +278,12 @@ inverters, driving final outputs out and outb with full logic levels.
   - Here is the layout of 16x RAM/ICM LOGIC BOX
 <img width="838" height="1281" alt="image" src="https://github.com/user-attachments/assets/36b7d9bd-c4d4-4e23-8445-1b02667ca301" />
 - Here is the layout of precharge circuit:
--  ![Diagram](DOCS/PC_lay1.png)
--  Here is the 8-bit Precharge circuit
   
--  <img width="991" height="526" alt="image" src="https://github.com/user-attachments/assets/a0f7908a-525d-4a2a-893c-a59af556544d" />
+   ![Diagram](DOCS/PC_lay1.png)
+  
+   Here is the 8-bit Precharge circuit
+  
+  <img width="991" height="526" alt="image" src="https://github.com/user-attachments/assets/a0f7908a-525d-4a2a-893c-a59af556544d" />
 
 - Here is the layout of Write driver :
   
