@@ -56,7 +56,7 @@ In this section, Various components of projects are explained in detail and real
 ### 6T_SRAM
 <div align = "center">
 <figure>
-    <img src="images/SRAM.png" alt="6T SRAM" title="Figure 4" height="500" width="700" align="center">
+    <img src="DOCS/6 tSRAM.png" alt="6T SRAM" title="Figure 4" height="500" width="700" align="center">
 </figure>
 <p></p>
 <p>&nbsp;Figure 6: 6T SRAM</p>
