@@ -308,6 +308,11 @@ inverters, driving final outputs out and outb with full logic levels.
   <img width="859" height="1238" alt="image" src="https://github.com/user-attachments/assets/d1c32f64-86f4-4960-ad85-13622a88ef2e" />
 
   ##### Conclusion
+  - This work presents the design, simulation, and layout of an 8T SRAM-based In-Memory Computing (IMC) architecture using the Sky130 open-source CMOS technology.
+  - The proposed design successfully integrates standard memory and compute-in-memory functionalities within a unified framework.
+  - Each component—ranging from the 8T SRAM cell, decoder, write driver, precharge circuit, sense amplifier, to the RAM/ICM logic block—was developed and validated through schematic simulations and physical verification (DRC and LVS) using Cadence Virtuoso.
+  -  The dual-wordline configuration of the 8T SRAM cell enabled selective access and simultaneous operand retrieval, facilitating basic logic operations within memory.
+  -  The architecture minimizes data movement, offering significant improvements in speed and energy efficiency—key enablers for modern edge computing applications.
 
 
 
