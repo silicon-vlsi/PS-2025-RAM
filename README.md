@@ -216,6 +216,19 @@ inverters, driving final outputs out and outb with full logic levels.
 ####	Additional Feature:
 -	The extra NMOS connected between the cross-coupled NMOS pair and dgnd (gate controlled by en_sa) ensures that the sense amplifier activates only during intended sensing periods, improving control and reducing power.
 -	### Write_driver
+-	The write driver circuit is responsible for writing input data into the SRAM cells by driving the bitlines during write operations.
+- Each bit of the 8-bit input (data<7:0>) is connected to a complementary pair of transmission gates that interface with the bl and blb lines of the SRAM array.
+- Each transmission gate is composed of one NMOS and one PMOS transistor connected in parallel, controlled by the signals wr_en and enb (where enb = ~wr_en), to ensure full logic swing and pass-gate operation.
+ ![Diagram](DOCS/WD.png)
+- #### Working:
+-	During a write operation (wr = 1, icm = 0), the decoder activates the target wordline (WL), and the write driver enables the corresponding data bits on bl and blb.
+-	The enabled transmission gates allow data[i] and data_b[i] to charge or discharge the bitlines.
+-	The access transistors in the SRAM cell pass these voltages to the internal nodes of the cell, flipping its state to reflect the input data.
+-	Once the data is latched, wr_en is deactivated, isolating the bitlines again.
+
+
+
+
 
 
 
