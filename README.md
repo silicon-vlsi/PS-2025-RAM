@@ -197,6 +197,7 @@ In this section, Various components of projects are explained in detail and real
 #### 4.	Output Buffering
 - The outputs of the cross-coupled inverters are connected to standard
 inverters, driving final outputs out and outb with full logic levels.
+- Here is the schematic of the Sense amplifier
  ![Diagram](DOCS/Sense_Amp.png)
 
 
