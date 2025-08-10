@@ -128,7 +128,7 @@ In this section, Various components of projects are explained in detail and real
    ![Diagram](Rowdec.png)
 - The schematic of the decoder is shown below.
    ![Diagram](DOCS/Decoder.png)
-  ### RAM/ICM logic block :
+  #### RAM/ICM logic block :
 - The RAM_ICM logic block controls the activation of wordlines (WL01, WL02) based on the selected operating mode—SRAM or In-Memory Computing (ICM).
 - This block ensures that only the intended wordlines are enabled   under appropriate control signals, allowing conventional memory access or parallel computation.
 - Inputs and Outputs
@@ -142,21 +142,21 @@ In this section, Various components of projects are explained in detail and real
 | dac1 | Input | Data/control signal for activating WL02 in ICM mode |  
 | WL01 | Output | Wordline 1 control signal |  
 | WL02 | Output | Wordline 2 control signal | 
-#### Operating Modes and Functionality
-#### A.	Block Disabled (wr = 0)
+##### Operating Modes and Functionality
+##### A.	Block Disabled (wr = 0)
 - The logic block is inactive, and both wordlines are forced low regardless of other inputs.
 - Ensures that no unintended access or computation occurs
   | Condition | Output |
   | - | - |
   | wr=0 | WL01=0,WLO2=0 |
-  #### B.	SRAM Mode (wr = 1, icm = 0)
+  ##### B.	SRAM Mode (wr = 1, icm = 0)
 - In this mode, the output of the decoder (dec) controls both wordlines simultaneously.
 - If the decoder output is 1, both wordlines are enabled for read/write operations.
   | Condition | Output |
   | - | - |
   | wr=1.icm=0,dec=1 | WL01=1,WLO2=1 |
    | wr=1.icm=0,dec=0 | WL01=0,WLO2=0 |
-  #### C.	ICM Mode (wr = 1, icm = 1)
+  ##### C.	ICM Mode (wr = 1, icm = 1)
 - This mode enables selective and parallel activation of wordlines based on dac0 and dac1.
 - Useful for performing logic operations across multiple memory rows.
    | Condition | Output |
@@ -165,7 +165,7 @@ In this section, Various components of projects are explained in detail and real
    | dac1=1 | WL02=1 |
    | dac0=0 | WL01=0 |
    | dac1=0 | WL02=0 |
-  #### Logic Expressions
+  ##### Logic Expressions
 - Using the truth table, the outputs can be defined as:
   - Wordline 1 (WL01):
   - WL01 = wr ⋅ ((~icm ⋅ dec) + (icm ⋅ dac0))
