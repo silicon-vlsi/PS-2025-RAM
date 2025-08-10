@@ -297,7 +297,7 @@ inverters, driving final outputs out and outb with full logic levels.
     
 -   Here is the layout of Sense amplifier
     
-   [Diagram](DOCS/sen_amp_lay1.png)
+   ![Diagram](DOCS/sen_amp_lay1.png)
    
 -   Here is the layout of 8 bit Sense amplifier
  
