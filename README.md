@@ -1,3 +1,7 @@
+# About
+This is the project done as part Practice School 2025 at Advanced VLSI Lab for Sevya Multimedia.
+This repo is a form from https://github.com/AbhishekR1140/PSPROJECTSRAM (Abhishek Rath)
+
 # 16 byte SRAM USING CMOS
 
 - Designed a 16-byte SRAM (Static Random Access Memory) using the 130nm technology node, employing a full custom approach.
